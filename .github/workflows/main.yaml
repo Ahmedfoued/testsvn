@@ -49,5 +49,5 @@ jobs:
           echo "list content trunk in repo_name post rsync"
           ls -al $REPO_NAME/trunk
           #svn stat $REPO_NAME
-          svn import --username=${{ secrets.SVN_USERNAME }} --password=${{ secrets.SVN_PASSWORD }} $REPO_NAME -m "deploy"
+          svn commit --username=${{ secrets.SVN_USERNAME }} --password=${{ secrets.SVN_PASSWORD }} $REPO_NAME -m "deploy"
           svn update
