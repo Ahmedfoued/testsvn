@@ -25,12 +25,14 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y subversion
 
       - name: Checkout SVN repository
-        run:  svn co --username=${{ secrets.SVN_USERNAME }} --password=${{ secrets.SVN_PASSWORD }} ${{ secrets.SVN_URL }} $REPO_NAME
+        run: |  
+          echo $REPO_NAME
+          # svn co --username=${{ secrets.SVN_USERNAME }} --password=${{ secrets.SVN_PASSWORD }} ${{ secrets.SVN_URL }} $REPO_NAME
 
       - name: Copy trunk && tag
         run: |
-          rm -rf $REPO_NAME/trunk/*
-          rsync -av --exclude="$REPO_NAME" --exclude=".git" --exclude=".github/" ./ $REPO_NAME/trunk
-          svn copy $REPO_NAME/trunk/ $REPO_NAME/tags/$RELEASE_VERSION
-          ls -al $REPO_NAME
-          svn stat $REPO_NAME
+          # rm -rf $REPO_NAME/trunk/*
+          # rsync -av --exclude="$REPO_NAME" --exclude=".git" --exclude=".github/" ./ $REPO_NAME/trunk
+          # svn copy $REPO_NAME/trunk/ $REPO_NAME/tags/$RELEASE_VERSION
+          # ls -al $REPO_NAME
+          # svn stat $REPO_NAME
