@@ -1,0 +1,23 @@
+iframe#pbx-seamless-iframe {
+    border: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+}
+
+.woocommerce-MyAccount-paymentMethods+a.button,
+.woocommerce-MyAccount-content a.button[href*=add-payment-method] {
+    display: none;
+}
+
+.pbx-btn-cancel {
+    text-align: center;
+
+    &__btn {
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+        background: #000000;
+        padding: 8px 20px;
+    }
+}

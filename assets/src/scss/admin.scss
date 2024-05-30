@@ -1,0 +1,212 @@
+@import './libs/bootstrap.min.scss';
+
+#pbx-plugin-configuration {
+
+    & .pbx-notice {
+        border-left-width: 4px;
+        border-left-style: solid;
+        margin-top: 15px;
+        padding: 12px;
+        margin: 5px 0 15px;
+    }
+    
+    & #pbx-tabs {
+        padding-bottom: 0;
+    }
+
+    & .tab-content {
+        display: none;
+    }
+
+    & .tab-content.tab-active {
+        display: block;
+    }
+
+    & h2, 
+    & h3 {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+}
+
+.pbx-flex-container {
+    display: flex;
+    gap: 20px;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
+
+    .pbx-plugin-info {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    
+        &__image {
+            background: url('../../../images/logo.png') left center no-repeat;
+            width: 250px;
+            height: 70px;   
+        }
+    
+        &__guide {
+            display: flex;
+            align-items: center;
+
+            &__left {
+
+                & svg {
+                    display: block;
+                    width: 50px;
+                    height: auto;
+                }
+            }
+
+            &__right {
+                border-left: 1px solid #ccc;
+                padding-left: 15px;
+
+                &__link {
+
+                    & a {
+                        color: #4b9da2;
+                        text-decoration: none;
+                    }
+                }
+
+                &__download {
+                    background-color: #4b9da2;
+                    background-image: none;
+                    border: 1px solid #4b9da2;
+                    border-radius: 3px;
+                    color: #fff;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 1.42857;
+                    margin-bottom: 0;
+                    padding: 6px 8px;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    user-select: none;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                }
+            }
+    
+        }
+    }
+}
+
+
+.pbx-alert-box {
+    text-align: center;
+    display: flex;
+    padding: 15px;
+
+    & div.dashicons {
+        font-size: 50px;
+        height: 50px;
+        flex-grow: 2;
+        display: flex;
+        justify-content: flex-start;
+        align-self: center;
+    }
+
+    & div.dashicons:first-child {
+        justify-content: flex-end;
+    }
+
+    & .pbx-alert-box-content {
+        flex-grow: 1;
+    }
+
+    & .pbx-alert-box-content .pbx-alert-title {
+        font-size: 24px;
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
+#pbx-current-mode-selector {
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column;
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+
+    & table {
+        table-layout: initial;
+    }
+
+    &.pbx-current-mode-production {
+        border-color: #46B450;
+    }
+
+    &.pbx-current-mode-test {
+        border-color: #ffb900;
+    }
+}
+
+.pbx-current-config-mode {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 4px;
+
+    &.pbx-current-config-mode-production {
+        background-color: #ecf7ed;
+        border-color: #46b450;
+    }
+
+    &.pbx-current-config-mode-test {
+        background-color: #fff8e5;
+        border-color: #ffb900
+    }
+}
+
+#pbx-cards-configuration {
+
+    & .pbx-card-body {
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        padding-top: 55px;
+        background-size: auto 25px;
+    }
+
+    & .pbx-card-label {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    & .pbx-card-force-display-state,
+    & .pbx-card-ux {
+        padding-top: 10px;
+    }
+}
+
+#JS-WC-button-dwn-log-file {
+    line-height: 2.3;
+}
+
+#woocommerce_etransactions_std_technical ~ table tr:first-child,
+#woocommerce_etransactions_3x_technical ~ table tr:first-child,
+#woocommerce_etransactions_3x_sofinco_technical ~ table tr:first-child {
+    display: none;
+}
+
+#pbx-global-configuration .active-notice {
+    font-size: 13px;
+    font-weight: 400;
+    background: #B0ECFF;
+    border-left: 1px solid #1400FB;
+    padding: 10px 20px;
+    margin: 0;
+    margin-bottom: 20px;
+}

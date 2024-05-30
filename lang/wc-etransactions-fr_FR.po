@@ -1,0 +1,802 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Up2pay e-Transactions\n"
+"POT-Creation-Date: 2024-05-29 14:44+0200\n"
+"PO-Revision-Date: 2024-05-29 14:46+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wc-etransactions.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: class/wc-etransactions-abstract-gateway.php:68
+#: class/wc-etransactions-abstract-gateway.php:668
+#: class/wc-etransactions-abstract-gateway.php:729
+msgid "TEST MODE"
+msgstr "MODE TEST"
+
+#: class/wc-etransactions-abstract-gateway.php:69
+#: class/wc-etransactions-abstract-gateway.php:70
+#: class/wc-etransactions-threetime-gateway.php:40
+msgid "Test mode enabled - No debit will be made"
+msgstr "Mode test activé - Aucun débit ne sera effectué"
+
+#: class/wc-etransactions-abstract-gateway.php:221
+msgid "Customer is redirected to E-Transactions payment page"
+msgstr "Le client est redirigé vers la pages de paiement etransactions"
+
+#: class/wc-etransactions-abstract-gateway.php:323
+msgid "Do you really want to change the current shop environment mode?"
+msgstr "Voulez-vous réellement changer le mode de fonctionnement actuel ?"
+
+#: class/wc-etransactions-abstract-gateway.php:338
+msgid "Do you have a question?"
+msgstr "Vous avez une question ?"
+
+#: class/wc-etransactions-abstract-gateway.php:339
+msgid "Contact us using"
+msgstr "Contactez-nous en utilisant"
+
+#: class/wc-etransactions-abstract-gateway.php:339
+msgid "this link"
+msgstr "ce lien"
+
+#: class/wc-etransactions-abstract-gateway.php:344
+msgid "Download User guide"
+msgstr "Télécharger le guide utilisateur"
+
+#: class/wc-etransactions-abstract-gateway.php:355
+msgid "Logs files"
+msgstr "Fichiers de log"
+
+#: class/wc-etransactions-abstract-gateway.php:364
+msgid "Download"
+msgstr "Télécharger"
+
+#: class/wc-etransactions-abstract-gateway.php:378
+#, php-format
+msgid "You are currently editing the <strong><u>%s</u></strong> configuration"
+msgstr ""
+"Vous modifiez actuellement la configuration de <strong><u>%s</u></strong>"
+
+#: class/wc-etransactions-abstract-gateway.php:382
+#, php-format
+msgid "=> Click here to switch to the <strong>%s</strong> configuration"
+msgstr "=> Cliquez ici pour passer à la configuration de <strong>%s</strong>"
+
+#: class/wc-etransactions-abstract-gateway.php:388
+msgid "My account"
+msgstr "Mon compte"
+
+#: class/wc-etransactions-abstract-gateway.php:391
+msgid "Global configuration"
+msgstr "Configuration globale"
+
+#: class/wc-etransactions-abstract-gateway.php:395
+#: class/wc-etransactions-display.php:369
+msgid "Means of payment configuration"
+msgstr "Configuration des moyens de paiement"
+
+#: class/wc-etransactions-abstract-gateway.php:533
+msgid "Back..."
+msgstr "Retour..."
+
+#: class/wc-etransactions-abstract-gateway.php:555
+msgid "HMAC key cannot be decrypted please re-enter or reinitialise it."
+msgstr ""
+"La clef HMAC n'a pas pu être déchiffrée! entrez à nouveau cette clef, ou "
+"réinitialisez la."
+
+#: class/wc-etransactions-abstract-gateway.php:560
+msgid "Woocommerce is not active !"
+msgstr "WooCommerce n’est pas activé !"
+
+#: class/wc-etransactions-abstract-gateway.php:576
+msgid "Test mode enabled"
+msgstr "Mode test activé"
+
+#: class/wc-etransactions-abstract-gateway.php:577
+msgid "No debit will be made"
+msgstr "Aucun débit ne sera effectué"
+
+#: class/wc-etransactions-abstract-gateway.php:616
+msgid "Payment was captured by E-Transactions."
+msgstr "Paiement capturé par e-Transactions."
+
+#: class/wc-etransactions-abstract-gateway.php:623
+#: class/wc-etransactions-callbacks.php:252
+#: class/wc-etransactions-callbacks.php:319
+#, php-format
+msgid "Payment was refused by E-Transactions (%s)."
+msgstr "Paiement refusé par e-Transactions (%s)."
+
+#: class/wc-etransactions-abstract-gateway.php:661
+#, php-format
+msgid "Pay with my stored card - **%02d - %02d/%02d"
+msgstr "Payer avec ma carte enregistrée - **%02d - %02d/%02d"
+
+#: class/wc-etransactions-abstract-gateway.php:683
+msgid "Please fill a valid number"
+msgstr "Veuillez renseigner un numéro de téléphone valide"
+
+#: class/wc-etransactions-abstract-gateway.php:766
+#, php-format
+msgid "Refund succed of (%s)"
+msgstr ""
+
+#: class/wc-etransactions-abstract-gateway.php:770
+#, php-format
+msgid "Refund refused of (%s)"
+msgstr ""
+
+#: class/wc-etransactions-callbacks.php:83
+msgid "Payment canceled"
+msgstr "Le paiement a été annulé"
+
+#: class/wc-etransactions-callbacks.php:107
+#: class/wc-etransactions-callbacks.php:170
+msgid "Customer is back from E-Transactions payment page."
+msgstr "Le client revient de la page de paiement e-Transactions."
+
+#: class/wc-etransactions-callbacks.php:108
+msgid "Payment refused by E-Transactions"
+msgstr "Le paiement a été refusé par e-Transactions"
+
+#: class/wc-etransactions-callbacks.php:213
+msgid "Your card has been added as a new payment method."
+msgstr "Votre carte a été ajoutée comme nouvelle méthode de paiement."
+
+#: class/wc-etransactions-callbacks.php:293
+#, php-format
+msgid "Missing %s parameter in E-Transactions call"
+msgstr "Le paramètre %s manque dans l'appel e-Transactions"
+
+#: class/wc-etransactions-callbacks.php:338
+#: class/wc-etransactions-callbacks.php:358
+#: class/wc-etransactions-callbacks.php:373
+msgid "Payment was authorized and captured by E-Transactions."
+msgstr "Paiement autorisé et capturé par e-Transactions."
+
+#: class/wc-etransactions-callbacks.php:347
+#: class/wc-etransactions-callbacks.php:377
+msgid "Second payment was captured by E-Transactions."
+msgstr "Deuxième paiement capturé par e-Transactions."
+
+#: class/wc-etransactions-callbacks.php:354
+msgid "Payment was authorized by E-Transactions."
+msgstr "Paiement autorisé par e-Transactions."
+
+#: class/wc-etransactions-callbacks.php:380
+msgid "Third payment was captured by E-Transactions."
+msgstr "Troisième paiement capturé par e-Transactions."
+
+#: class/wc-etransactions-callbacks.php:383
+msgid "Invalid three-time payment status"
+msgstr "Statut du paiement en trois fois non valide"
+
+#: class/wc-etransactions-callbacks.php:389 class/wc-etransactions.php:343
+#, php-format
+msgid "Unexpected type %s"
+msgstr "Type %s inattendu"
+
+#: class/wc-etransactions-config.php:319
+msgid "Current shop environment mode"
+msgstr "Mode d'environnement de la boutique  actuel"
+
+#: class/wc-etransactions-config.php:323
+msgid "Production"
+msgstr "Production"
+
+#: class/wc-etransactions-config.php:324
+msgid "Test (no debit)"
+msgstr "Test (aucun débit ne sera effectué)"
+
+#: class/wc-etransactions-display.php:46
+msgid "Enable/Disable"
+msgstr "Actif/Inactif"
+
+#: class/wc-etransactions-display.php:48
+msgid "Enable E-Transactions Payment"
+msgstr "Activer le paiement par e-Transactions"
+
+#: class/wc-etransactions-display.php:55
+msgid ""
+"The Payment in installments offered here is a form of payment by credit card "
+"for which the merchant bears the risk. Bank discounts are not guaranteed for "
+"the merchant."
+msgstr ""
+
+#: class/wc-etransactions-display.php:64
+msgid ""
+"Payment in 3XCB CACF is an option in your contract. Please contact your "
+"customer advisor. Once the option is activated, you will be able to define "
+"the conditions of implementation: coverage of costs, minimum & maximum "
+"threshold when paying in 3xCB, bank discounts are guaranteed for the "
+"merchant."
+msgstr ""
+
+#: class/wc-etransactions-display.php:72
+msgid "Grouped payment configuration"
+msgstr "Réglages du moyen de paiement groupé"
+
+#: class/wc-etransactions-display.php:79
+msgid "Activate"
+msgstr "Activer"
+
+#: class/wc-etransactions-display.php:81
+msgid ""
+"Display one payment option for all means of payment available on payment "
+"page after redirection"
+msgstr ""
+"Afficher un bouton pour l'ensemble des moyens de paiement accessible sur la "
+"page de paiement après redirection"
+
+#: class/wc-etransactions-display.php:89
+msgid "Fees management"
+msgstr ""
+
+#: class/wc-etransactions-display.php:92
+msgid "With cost sharing with the customer"
+msgstr ""
+
+#: class/wc-etransactions-display.php:93
+msgid "No cost to the client"
+msgstr ""
+
+#: class/wc-etransactions-display.php:99 class/wc-etransactions-display.php:110
+#: class/wc-etransactions-display.php:123
+msgid "Title displayed on your payment page"
+msgstr "Texte affiché sur votre page de paiement"
+
+#: class/wc-etransactions-display.php:101
+#: class/wc-etransactions-display.php:112
+#: class/wc-etransactions-display.php:125
+msgid ""
+"Title of generic payment option displayed on your page with means of payment "
+"choices"
+msgstr ""
+"Libellé du moyen de paiement Up2pay e-Transactions regroupé qui s'affichera "
+"sur votre page de choix des moyens de paiement."
+
+#: class/wc-etransactions-display.php:140
+msgid "Logo displayed on your payment page"
+msgstr "Logo affiché sur votre page de paiement"
+
+#: class/wc-etransactions-display.php:142
+msgid ""
+"Title of generic payment option displayed on your page with means of payment "
+"choices. Files are available on directory: "
+msgstr ""
+"Logo du moyen de paiement Up2pay e-Transactions regroupé qui s'affichera sur "
+"votre page de choix des moyens de paiement associé au libellé. Les fichiers "
+"sont dans le répertoire: "
+
+#: class/wc-etransactions-display.php:149
+msgid "Description displayed on your payment page"
+msgstr "Description affichée sur votre page de paiement"
+
+#: class/wc-etransactions-display.php:151
+msgid ""
+"Description of generic payment option displayed on your page with means of "
+"payment choices."
+msgstr ""
+"Description du moyen de paiement Up2pay e-Transactions regroupé qui "
+"s'affichera sur votre page de choix des moyens de paiement associée au "
+"libellé."
+
+#: class/wc-etransactions-display.php:157
+msgid "Cards default settings"
+msgstr "Réglages par défaut des paiements"
+
+#: class/wc-etransactions-display.php:165
+msgid "Debit type"
+msgstr "Type de débit"
+
+#: class/wc-etransactions-display.php:168
+msgid "Immediate"
+msgstr "Immédiat"
+
+#: class/wc-etransactions-display.php:169
+msgid "On order event"
+msgstr "Sur évènement de commande"
+
+#: class/wc-etransactions-display.php:170
+msgid "1 day"
+msgstr "1 jour"
+
+#: class/wc-etransactions-display.php:171
+msgid "2 days"
+msgstr "2 jours"
+
+#: class/wc-etransactions-display.php:172
+msgid "3 days"
+msgstr "3 jours"
+
+#: class/wc-etransactions-display.php:173
+msgid "4 days"
+msgstr "4 jours"
+
+#: class/wc-etransactions-display.php:174
+msgid "5 days"
+msgstr "5 jours"
+
+#: class/wc-etransactions-display.php:175
+msgid "6 days"
+msgstr "6 jours"
+
+#: class/wc-etransactions-display.php:176
+msgid "7 days"
+msgstr "7 jours"
+
+#: class/wc-etransactions-display.php:182
+msgid "Order status that trigger capture"
+msgstr "Etat de la commande déclenchant l'envoi en banque"
+
+#: class/wc-etransactions-display.php:193
+msgid "Display of payment method"
+msgstr "Affichage du moyen de paiement"
+
+#: class/wc-etransactions-display.php:195
+msgid ""
+"This setting does not apply on the generic method (redirect method is forced)"
+msgstr ""
+"Ce réglage n'a pas d'effet pour la méthode générique, qui est en redirection "
+"uniquement."
+
+#: class/wc-etransactions-display.php:197
+msgid "Redirect method (default)"
+msgstr "Méthode redirection (par défaut)"
+
+#: class/wc-etransactions-display.php:198
+#: class/wc-etransactions-display.php:562
+msgid "Seamless (iframe)"
+msgstr "Intégré (iFrame)"
+
+#: class/wc-etransactions-display.php:204
+msgid "1-click payment"
+msgstr "Paiement en 1 Clic"
+
+#: class/wc-etransactions-display.php:206
+msgid ""
+"Allow your customer to pay without entering his card number for every order "
+"(only for payment with CB, VISA and Mastercard)"
+msgstr ""
+"Permettre à votre client de payer sans saisir les informations de sa carte à "
+"chaque achat (uniquement disponible pour le paiement avec CB, VISA et "
+"Mastercard)."
+
+#: class/wc-etransactions-display.php:215
+msgid "Minimum amount to display payment option"
+msgstr ""
+
+#: class/wc-etransactions-display.php:217
+#: class/wc-etransactions-display.php:231
+msgid ""
+"Enable this means of payment only for orders with amount equal or greater "
+"than the amount configured (let it empty for no condition)"
+msgstr ""
+"Activer ce moyen de paiement pour les commandes dont le montant est "
+"supérieur ou égal au montant indiqué (laissez vide pour ne pas activer cette "
+"condition)"
+
+#: class/wc-etransactions-display.php:221
+msgid "Maximum amount to display payment option"
+msgstr ""
+
+#: class/wc-etransactions-display.php:223
+msgid ""
+"Enable this means of payment only for orders with amount equal or lower than "
+"the amount configured (let it empty for no condition)"
+msgstr ""
+"Activer ce moyen de paiement pour les commandes dont le montant est "
+"supérieur ou égal au montant indiqué (laissez vide pour ne pas activer cette "
+"condition)"
+
+#: class/wc-etransactions-display.php:229
+msgid "Minimal amount"
+msgstr "Montant minimal"
+
+#: class/wc-etransactions-display.php:237
+msgid "3DS exemption threshold"
+msgstr "Seuil d’exemption 3DS"
+
+#: class/wc-etransactions-display.php:239
+msgid ""
+"Enable 3DS exemption means of payment only for orders with amount equal or "
+"smaller than the amount configured (let it empty for no condition)"
+msgstr ""
+"Activer l’exemption 3DS pour les commandes dont le montant est inférieur ou "
+"égal au montant indiqué (laissez vide pour ne pas activer cette condition)"
+
+#: class/wc-etransactions-display.php:267
+msgid "Up2pay e-Transactions offer subscribed"
+msgstr "Offre Up2pay e-Transactions souscrite"
+
+#: class/wc-etransactions-display.php:271
+msgid "e-Transactions Access"
+msgstr "e-Transactions Access"
+
+#: class/wc-etransactions-display.php:272
+msgid "e-Transactions Premium"
+msgstr "e-Transactions Premium"
+
+#: class/wc-etransactions-display.php:278
+msgid "Site number"
+msgstr "Numéro du site"
+
+#: class/wc-etransactions-display.php:280
+msgid "Site number provided by E-Transactions."
+msgstr ""
+"Le numéro du site (sur 7 positions, ex: 1999888) vous est fourni par e-"
+"Transactions lors de l'ouverture."
+
+#: class/wc-etransactions-display.php:291
+msgid "Rank number"
+msgstr "Rang"
+
+#: class/wc-etransactions-display.php:293
+msgid "Rank number provided by E-Transactions (two last digits)."
+msgstr ""
+"Numéro de rang fourni par e-Transactions lors de l'ouverture (sur 3 "
+"positions, ex: 001)."
+
+#: class/wc-etransactions-display.php:304
+msgid "Login"
+msgstr "Identifiant"
+
+#: class/wc-etransactions-display.php:306
+msgid "Internal login provided by E-Transactions."
+msgstr ""
+"Votre identifiant vous est fourni par e-Transactions lors de l'ouverture."
+
+#: class/wc-etransactions-display.php:317
+msgid "HMAC"
+msgstr "HMAC"
+
+#: class/wc-etransactions-display.php:319
+msgid "Secrete HMAC key to create using the E-Transactions interface."
+msgstr ""
+"Clé secrète HMAC à générer puis activer dans votre Back-Office e-"
+"Transactions."
+
+#: class/wc-etransactions-display.php:330
+msgid "Technical settings"
+msgstr "Configuration technique"
+
+#: class/wc-etransactions-display.php:336
+msgid "IPN IPs"
+msgstr "Adresses IP de l’IPN"
+
+#: class/wc-etransactions-display.php:338
+msgid "A coma separated list of E-Transactions IPN IPs."
+msgstr ""
+"IP des serveurs e-Transactions autorisés, séparées par des virgules, pour la "
+"réception des Notifications Instantanées de Paiement."
+
+#: class/wc-etransactions-display.php:346
+msgid "Debug"
+msgstr "Debug"
+
+#: class/wc-etransactions-display.php:348
+msgid "Enable some debugging information"
+msgstr "Activer les informations de débogage"
+
+#: class/wc-etransactions-display.php:389
+msgid ""
+"This is a debug view. Click continue to be redirected to E-Transactions "
+"payment page."
+msgstr ""
+"Ceci est une vue de debug. Cliquer sur \"continuer\" pour être redirigé vers "
+"la page de paiement e-Transactions."
+
+#: class/wc-etransactions-display.php:391
+msgid ""
+"You will be redirected to the E-Transactions payment page. If not, please "
+"use the button bellow."
+msgstr ""
+"Vous serez redirigé vers la page de paiement e-Transactions. Si ce n'était "
+"pas le cas, merci d'utiliser le bouton ci dessous."
+
+#: class/wc-etransactions-display.php:398
+msgid "Continue..."
+msgstr "Continuer..."
+
+#: class/wc-etransactions-display.php:430
+msgid "Back"
+msgstr "Retour"
+
+#: class/wc-etransactions-display.php:443
+msgid "This is a debug view."
+msgstr "Ceci est une vue de debogage."
+
+#: class/wc-etransactions-display.php:538
+msgid "Display on your payment page"
+msgstr "Afficher sur votre page de paiement"
+
+#: class/wc-etransactions-display.php:541
+msgid "Display method"
+msgstr "Affichage"
+
+#: class/wc-etransactions-display.php:548
+msgid "Same as global configuration"
+msgstr "Comme la configuration globale"
+
+#: class/wc-etransactions-display.php:555
+msgid "Redirect method"
+msgstr "Paiement en redirection"
+
+#: class/wc-etransactions-encrypt.php:69 class/wc-etransactions-encrypt.php:86
+msgid ""
+"For some reason, the key has just been generated. please reenter the HMAC "
+"key to crypt it."
+msgstr ""
+"Pour une raison quelconque, la clé vient d'être générée. Entrez à nouveau la "
+"clé HMAC pour qu'elle soit cryptée."
+
+#: class/wc-etransactions-hooks.php:74
+msgid "File not exist!"
+msgstr "Le fichier n'existe pas"
+
+#: class/wc-etransactions-hooks.php:84
+msgid "Credit Agricole Settings"
+msgstr "Paramètre Crédit Agricole"
+
+#: class/wc-etransactions-hooks.php:85
+msgid "Credit Agricole"
+msgstr "Crédit Agricole"
+
+#: class/wc-etransactions-standard-gateway.php:22
+msgid "Up2pay e-Transactions Crédit Agricole"
+msgstr "Up2pay e-Transactions Crédit Agricole"
+
+#: class/wc-etransactions-standard-gateway.php:23
+#: class/wc-etransactions-threetime-gateway.php:29
+msgid ""
+"Choose your mean of payment directly on secured payment page of Credit "
+"Agricole"
+msgstr ""
+"Choisissez votre moyen de paiement sur les pages de paiement sécurisées du "
+"Crédit Agricole"
+
+#: class/wc-etransactions-standard-gateway.php:24
+msgid "Secured payment by Up2pay e-Transactions Crédit Agricole"
+msgstr "Paiement sécurisé via Up2pay e-Transactions Crédit Agricole"
+
+#: class/wc-etransactions-standard-gateway.php:55
+#: class/wc-etransactions-threetime-gateway.php:111
+msgid "Card type:"
+msgstr "Type de carte:"
+
+#: class/wc-etransactions-standard-gateway.php:56
+msgid "Amount:"
+msgstr "Montant :"
+
+#: class/wc-etransactions-standard-gateway.php:98
+#: class/wc-etransactions-threetime-gateway.php:98
+msgid "Reference:"
+msgstr "Référence:"
+
+#: class/wc-etransactions-standard-gateway.php:101
+#: class/wc-etransactions-threetime-gateway.php:101
+msgid "Country of IP:"
+msgstr "Pays de l'IP:"
+
+#: class/wc-etransactions-standard-gateway.php:104
+#: class/wc-etransactions-standard-gateway.php:149
+#: class/wc-etransactions-threetime-gateway.php:104
+msgid "Processing date:"
+msgstr "Date de traitement:"
+
+#: class/wc-etransactions-standard-gateway.php:115
+#: class/wc-etransactions-threetime-gateway.php:115
+msgid "Card numbers:"
+msgstr "Numéros de la carte:"
+
+#: class/wc-etransactions-standard-gateway.php:119
+#: class/wc-etransactions-threetime-gateway.php:119
+msgid "Validity date:"
+msgstr "Date de validité:"
+
+#: class/wc-etransactions-standard-gateway.php:128
+#: class/wc-etransactions-threetime-gateway.php:128
+msgid "3DS version:"
+msgstr "Version 3DS:"
+
+#: class/wc-etransactions-standard-gateway.php:131
+#: class/wc-etransactions-standard-gateway.php:146
+#: class/wc-etransactions-threetime-gateway.php:152
+msgid "Transaction:"
+msgstr "Transaction:"
+
+#: class/wc-etransactions-standard-gateway.php:132
+#: class/wc-etransactions-standard-gateway.php:147
+#: class/wc-etransactions-threetime-gateway.php:153
+msgid "Call:"
+msgstr "Appel:"
+
+#: class/wc-etransactions-standard-gateway.php:135
+#: class/wc-etransactions-standard-gateway.php:148
+#: class/wc-etransactions-threetime-gateway.php:154
+msgid "Authorization:"
+msgstr "Autorisation:"
+
+#: class/wc-etransactions-standard-gateway.php:138
+#: class/wc-etransactions-threetime-gateway.php:156
+msgid "Payment information"
+msgstr "Informations sur le paiement"
+
+#: class/wc-etransactions-standard-gateway.php:143
+msgid "Capture information"
+msgstr "Informations sur la capture"
+
+#: class/wc-etransactions-threetime-gateway.php:28
+msgid "Up2pay e-Transactions Crédit Agricole 3 times"
+msgstr "Offre paiement en 3 fois Up2pay e-Transactions Crédit Agricole"
+
+#: class/wc-etransactions-threetime-gateway.php:30
+msgid "Secured 3 times payment by Up2pay e-Transactions Crédit Agricole"
+msgstr "Paiement en 3 fois sécurisé via Up2pay e-Transactions Crédit Agricole"
+
+#: class/wc-etransactions-threetime-gateway.php:133
+msgid "First debit:"
+msgstr "Premier paiement:"
+
+#: class/wc-etransactions-threetime-gateway.php:139
+#: class/wc-etransactions-threetime-gateway.php:148
+msgid "Not achieved"
+msgstr "Non traité"
+
+#: class/wc-etransactions-threetime-gateway.php:142
+msgid "Second debit:"
+msgstr "Seconde échéance:"
+
+#: class/wc-etransactions-threetime-gateway.php:150
+msgid "Third debit:"
+msgstr "Troisième échéance:"
+
+#: class/wc-etransactions.php:666
+msgid "E-Transactions not available. Please try again later."
+msgstr "e-Transactions n'est pas disponible. Merci d'essayer plus tard."
+
+#: class/wc-etransactions.php:749 class/wc-etransactions.php:766
+#, php-format
+msgid "Invalid decrypted reference \"%s\""
+msgstr "Référence décryptée invalide \"%s\""
+
+#: wc-etransactions.php:30
+msgid "Previous plugin already installed. deactivate the previous one first."
+msgstr ""
+"Une version précédente de l'extension e-Transactions a été détectée. "
+"désactivez la version précédente avant d'activer celle-ci."
+
+#: wc-etransactions.php:177
+msgid "WooCommerce must be activated."
+msgstr "WooCommerce doit être activé."
+
+#. Plugin Name of the plugin/theme
+#. Author of the plugin/theme
+msgid "Up2pay e-Transactions"
+msgstr "Up2pay e-Transactions"
+
+#. Description of the plugin/theme
+msgid "Up2pay e-Transactions gateway payment plugins for WooCommerce"
+msgstr ""
+"Extension Up2pay e-Transactions - passerelle de paiement pour WooCommerce"
+
+#. Author URI of the plugin/theme
+msgid ""
+"https://www.ca-moncommerce.com/espace-client-mon-commerce/up2pay-e-"
+"transactions/"
+msgstr ""
+
+#~ msgid "Allowed IPs"
+#~ msgstr "Adresses IP autorisées"
+
+#~ msgid "http://www.e-transactions.fr"
+#~ msgstr "http://www.e-transactions.fr"
+
+#~ msgid "Backoffice Password"
+#~ msgstr "Mot de passe"
+
+#~ msgid "Internal backoffice password provided by E-Transactions."
+#~ msgstr ""
+#~ "Votre mot de passe, clé d'identification de l'API vous est fourni par e-"
+#~ "Transactions lors de l'ouverture."
+
+#~ msgid "Cards configuration"
+#~ msgstr "Configuration des cartes"
+
+#~ msgid "Force display in checkout"
+#~ msgstr "Forcer l'affichage"
+
+#~ msgid "Integration"
+#~ msgstr "Intégration"
+
+#~ msgid "Generic method settings"
+#~ msgstr "Réglages de la méthode générique"
+
+#~ msgid ""
+#~ "Display the generic payment method (choose the card type on payment page)"
+#~ msgstr ""
+#~ "Afficher la méthode de paiement générique (en redirection uniquement, "
+#~ "choix du moyen de paiement sur la page de paiement)"
+
+#~ msgid "Title"
+#~ msgstr "Nom de la méthode de paiment générique"
+
+#~ msgid "This controls the title which the user sees during checkout."
+#~ msgstr "Titre visible par le client lors d'une commande."
+
+#~ msgid "Icon file to be displayed to customers. file are located in: "
+#~ msgstr ""
+#~ "Fichier d'icône à afficher au client. les fichiers sont dans le "
+#~ "répertoire: "
+
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#~ msgid ""
+#~ "Payment method description that the customer will see on your checkout."
+#~ msgstr ""
+#~ "Description de la méthode de paiement . Commentaire visible par le client "
+#~ "lors d'une commande."
+
+#~ msgid "Delay"
+#~ msgstr "Délai de capture"
+
+#~ msgid "Capture when order reach this status"
+#~ msgstr "Capturer lorsque la commande atteint ce statut"
+
+#~ msgid "Type of payment experience"
+#~ msgstr "Expérience de paiement"
+
+#~ msgid ""
+#~ "Allow saving of card information to speed up next transactions (available "
+#~ "for Credit Card only)"
+#~ msgstr ""
+#~ "Autoriser le stockage de la carte pour accélérer l'acte d'achat: "
+#~ "uniquement pour les cartes bancaires (Visa Mastercard et maestro)"
+
+#~ msgid "Subscribed solution"
+#~ msgstr "Solution souscrite"
+
+#~ msgid "E-Transactions payment"
+#~ msgstr "Paiement par e-Transactions"
+
+#~ msgid "E-Transactions 3 times"
+#~ msgstr "e-Transactions paiement en trois fois"
+
+#~ msgid "E-Transactions 3 times payment"
+#~ msgstr "e-Transactions paiement en trois fois"
+
+#~ msgid "Version"
+#~ msgstr "Version"
+
+#~ msgid "E-Transactions account"
+#~ msgstr "Compte E-Transactions"
+
+#~ msgid "Environment"
+#~ msgstr "Environnement"
+
+#~ msgid "In test mode your payments will not be sent to the bank."
+#~ msgstr "En mode test, vos paiements ne seront pas envoyé à la banque."
+
+#~ msgid "Test"
+#~ msgstr "Test"
+
+#~ msgid "Payment was canceled by user on E-Transactions payment page."
+#~ msgstr ""
+#~ "Le paiement a été annulé par le client sur la page de paiement E-"
+#~ "Transactions."
