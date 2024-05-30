@@ -1,0 +1,36 @@
+name: Publish to SVN
+
+on:
+  [push,workflow_dispatch] 
+
+
+jobs:
+  checkout_svn:
+    if : github.ref_type == 'tag' 
+    runs-on: ubuntu-latest
+
+    env:
+      REPO_NAME: ''
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set env variables
+        run: |
+          REPO_NAME=$(basename $GITHUB_REPOSITORY)
+
+          echo "REPO_NAME=$REPO_NAME" >> $GITHUB_ENV
+          echo "RELEASE_VERSION=$GITHUB_REF_NAME" >> $GITHUB_ENV
+
+      - name: Install SVN
+        run: sudo apt-get update && sudo apt-get install -y subversion
+
+      - name: Checkout SVN repository
+        run:  svn co --username=${{ secrets.SVN_USERNAME }} --password=${{ secrets.SVN_PASSWORD }} ${{ secrets.SVN_URL }} $REPO_NAME
+
+      - name: Copy trunk && tag
+        run: |
+          rm -rf $REPO_NAME/trunk/*
+          rsync -av --exclude="$REPO_NAME" --exclude=".git" --exclude=".github/" ./ $REPO_NAME/trunk
+          svn copy $REPO_NAME/trunk/ $REPO_NAME/tags/$RELEASE_VERSION
+          ls -al $REPO_NAME
+          svn stat $REPO_NAME
