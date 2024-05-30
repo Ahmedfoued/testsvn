@@ -35,7 +35,7 @@ jobs:
           echo "list content branches in repo_name"
           ls -al $REPO_NAME/branches/
           echo "list content tags in repo_name"
-          ls -al $REPO_NAME/tages/
+          ls -al $REPO_NAME/tags/
           echo "list content assets in repo_name"
           ls -al $REPO_NAME/assets/
           echo "list content ./ in runner "
