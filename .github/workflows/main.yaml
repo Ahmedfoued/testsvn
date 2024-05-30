@@ -27,7 +27,10 @@ jobs:
       - name: Checkout SVN repository
         run: |  
           echo $REPO_NAME
-          # svn co --username=${{ secrets.SVN_USERNAME }} --password=${{ secrets.SVN_PASSWORD }} ${{ secrets.SVN_URL }} $REPO_NAME
+          svn co --username=${{ secrets.SVN_USERNAME }} --password=${{ secrets.SVN_PASSWORD }} ${{ secrets.SVN_URL }}  $REPO_NAME
+          ls -al $REPO_NAME
+          ls -al $REPO_NAME/trunk/
+        
 
       - name: Copy trunk && tag
         run: |
