@@ -43,8 +43,9 @@ jobs:
 
       - name: Copy trunk && tag
         run: |
-          # rm -rf $REPO_NAME/trunk/*
-          # rsync -av --exclude="$REPO_NAME" --exclude=".git" --exclude=".github/" ./ $REPO_NAME/trunk
-          # svn copy $REPO_NAME/trunk/ $REPO_NAME/tags/$RELEASE_VERSION
+          rm -rf $REPO_NAME/trunk/*
+          rsync -iazOvhc --exclude="$REPO_NAME" --exclude=".git" --exclude=".github/" ./ $REPO_NAME/trunk
+          svn copy $REPO_NAME/trunk/ $REPO_NAME/tags/$RELEASE_VERSION
           # ls -al $REPO_NAME
-          # svn stat $REPO_NAME
+          svn stat $REPO_NAME
+          svn update
