@@ -25,29 +25,35 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y subversion
 
       - name: Checkout SVN repository
-        run: |  
-          echo $REPO_NAME
-          svn co --username=${{ secrets.SVN_USERNAME }} --password=${{ secrets.SVN_PASSWORD }} ${{ secrets.SVN_URL }}  $REPO_NAME
-          echo "list content repo name:"
+        run: |
+          echo "Checking out SVN repository"
+          svn co --username="${{ secrets.SVN_USERNAME }}" --password="${{ secrets.SVN_PASSWORD }}" "${{ secrets.SVN_URL }}" $REPO_NAME
+          echo "SVN repository contents:"
           ls -al $REPO_NAME
-          echo "list content trunk in repo_name"
+          echo "Contents of trunk in SVN repository:"
           ls -al $REPO_NAME/trunk/
-          echo "list content branches in repo_name"
+          echo "Contents of branches in SVN repository:"
           ls -al $REPO_NAME/branches/
-          echo "list content tags in repo_name"
+          echo "Contents of tags in SVN repository:"
           ls -al $REPO_NAME/tags/
-          echo "list content assets in repo_name"
+          echo "Contents of assets in SVN repository:"
           ls -al $REPO_NAME/assets/
-          echo "list content ./ in runner "
+          echo "Contents of the current directory:"
           ls -al ./
 
-      - name: Copy trunk && tag
+      - name: Copy files to trunk and tag
         run: |
+          echo "Removing old files in trunk"
           rm -rf $REPO_NAME/trunk/*
+          echo "Copying new files to trunk"
           rsync -av --exclude="$REPO_NAME" --exclude=".git" --exclude=".github/" ./ $REPO_NAME/trunk
-          echo "list content trunk in repo_name post rsync"
+          echo "Listing contents of trunk after rsync:"
           ls -al $REPO_NAME/trunk
+          echo "Adding new files to SVN"
           svn add $REPO_NAME/trunk/* --auto-props --parents --depth infinity -q --force
+          echo "Creating a tag for the release"
           svn copy $REPO_NAME/trunk/ $REPO_NAME/tags/$RELEASE_VERSION
-          svn commit --username=${{ secrets.SVN_USERNAME }} --password=${{ secrets.SVN_PASSWORD }} -m "deploy" $REPO_NAME 
+          echo "Committing changes to SVN"
+          svn commit --username="${{ secrets.SVN_USERNAME }}" --password="${{ secrets.SVN_PASSWORD }}" -m "Deploying version $RELEASE_VERSION" $REPO_NAME 
+          echo "Updating SVN working copy"
           svn update
