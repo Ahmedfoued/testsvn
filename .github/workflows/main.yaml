@@ -44,8 +44,10 @@ jobs:
       - name: Copy trunk && tag
         run: |
           rm -rf $REPO_NAME/trunk/*
-          rsync -iazOvhc --exclude="$REPO_NAME" --exclude=".git" --exclude=".github/" ./ $REPO_NAME/trunk
-          svn copy $REPO_NAME/trunk/ $REPO_NAME/tags/$RELEASE_VERSION
-          # ls -al $REPO_NAME
-          svn stat $REPO_NAME
+          rsync -av --exclude="$REPO_NAME" --exclude=".git" --exclude=".github/" ./ $REPO_NAME/trunk
+          #svn copy $REPO_NAME/trunk/ $REPO_NAME/tags/$RELEASE_VERSION
+          echo "list content trunk in repo_name post rsync"
+          ls -al $REPO_NAME/trunk
+          #svn stat $REPO_NAME
+          svn import --username=${{ secrets.SVN_USERNAME }} --password=${{ secrets.SVN_PASSWORD }} $REPO_NAME -m "deploy"
           svn update
