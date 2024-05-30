@@ -28,9 +28,18 @@ jobs:
         run: |  
           echo $REPO_NAME
           svn co --username=${{ secrets.SVN_USERNAME }} --password=${{ secrets.SVN_PASSWORD }} ${{ secrets.SVN_URL }}  $REPO_NAME
+          echo "list content repo name:"
           ls -al $REPO_NAME
+          echo "list content trunk in repo_name"
           ls -al $REPO_NAME/trunk/
-        
+          echo "list content branches in repo_name"
+          ls -al $REPO_NAME/branches/
+          echo "list content tags in repo_name"
+          ls -al $REPO_NAME/tages/
+          echo "list content assets in repo_name"
+          ls -al $REPO_NAME/assets/
+          echo "list content ./ in runner "
+          ls -al ./
 
       - name: Copy trunk && tag
         run: |
